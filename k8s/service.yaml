@@ -7,6 +7,6 @@ spec:
   selector:
     app: miweb 
   ports:
-    - port: 8080 # Puerto lógico del servicio
-      targetPort: 8080 #Puerto del contenedor
-      nodePort: 30080 #Puerto del nodo (para acceder desde fuera)
+    - port: 8080 
+      targetPort: 8080 
+      nodePort: 30080 

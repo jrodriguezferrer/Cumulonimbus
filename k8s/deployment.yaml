@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: miweb-deployment 
+  name: miweb-deployment
 spec:
-  replicas: 2 #Alta disponibilidad, como mínimo 2 pods
+  replicas: 2
   selector:
     matchLabels:
       app: miweb
@@ -13,7 +13,7 @@ spec:
         app: miweb
     spec:
       containers:
-      - name: miweb
-      image: jrodriguezferrer0/miweb:latest
-      ports:
-        - containerPort:8080
+        - name: miweb
+          image: jrodriguezferrer0/miweb:latest
+          ports:
+            - containerPort: 8080
